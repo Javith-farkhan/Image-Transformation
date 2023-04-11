@@ -29,7 +29,7 @@ Display all the Transformed images.
 
 ## Program:
 ~~~
-Developed By: Javith farkhan H
+Developed By: Javith farkhan S
 Register Number:212221240017
 ~~~
 ~~~
@@ -45,7 +45,7 @@ rows,cols,dim=img.shape
 ~~~
 ### i) Image Translation:
 ~~~
-M=np.float32([[1,0,20],
+M=np.float32([[1,0,40],
              [0,1,50],
              [0,0,1]])
 translated_img=cv2.warpPerspective(img,M,(cols,rows))
@@ -55,7 +55,7 @@ plt.show()
 ~~~
 ### ii) Image Scaling:
 ~~~
-M=np.float32([[1.5,0,0],
+M=np.float32([[2,0,0],
              [0,2,0],
              [0,0,1]])
 scaled_img=cv2.warpPerspective(img,M,(cols,rows))
@@ -65,11 +65,11 @@ plt.show()
 ~~~
 ### iii) Image shearing:
 ~~~
-M_x=np.float32([[1,0.2,0],
+M_x=np.float32([[1,0.3,0],
                [0,1,0],
                [0,0,1]])
 M_y=np.float32([[1,0,0],
-               [0.4,1,0],
+               [0.2,1,0],
                [0,0,1]])
 sheared_img_xaxis=cv2.warpPerspective(img,M_x,(cols,rows))
 sheared_img_yaxis=cv2.warpPerspective(img,M_y,(cols,rows))
@@ -101,7 +101,7 @@ plt.show()
 
 ### v) Image Rotation:
 ~~~
-angle=np.radians(45)
+angle=np.radians(30)
 M=np.float32([[np.cos(angle),-(np.sin(angle)),0],
                [np.sin(angle),np.cos(angle),0],
                [0,0,1]])
@@ -112,38 +112,43 @@ plt.show()
 ~~~
 ### vi) Image Cropping:
 ~~~
-cropped_img=img[20:150,60:230]
+cropped_img=img[20:190,60:285]
 plt.axis('off')
 plt.imshow(cropped_img)
 plt.show()
 ~~~
 ## Output:
 ## Original Image:
-![output](./img/1.png)
+![car4](https://user-images.githubusercontent.com/94296805/231206066-5922139e-709d-4693-af90-b86ecd9e2b72.png)
+
 ## i) Image Translation:
-![output](./img/2.png)
+![5 1](https://user-images.githubusercontent.com/94296805/231206161-6c8b28cc-33aa-42b2-97cb-fe0292267510.png)
+
 
 
 ## ii) Image Scaling:
-![output](./img/3.png)
+![5 2](https://user-images.githubusercontent.com/94296805/231206343-986eb2ef-54e7-4381-a9a7-63d9224109ec.png)
+
 
 
 ## iii) Image shearing:
-![output](./img/4.png)
-![output](./img/5.png)
+![5 3](https://user-images.githubusercontent.com/94296805/231206404-fb5e1145-667c-4c00-867c-aa077fc16e51.png)
+
 
 
 ## iv) Image Reflection:
-![output](./img/6.png)
-![output](./img/7.png)
+![5 4](https://user-images.githubusercontent.com/94296805/231206457-715b989d-9fc6-4684-980c-ef51ba5e908c.png)
+
 
 
 ## v) Image Rotation:
-![output](./img/8.png)
+![5 5](https://user-images.githubusercontent.com/94296805/231206511-eddc2e11-7f08-4a60-bcdf-32ad07b8a709.png)
+
 
 
 ## vi) Image Cropping:
-![output](./img/9.png)
+![5 6](https://user-images.githubusercontent.com/94296805/231206561-d4d1daf5-d419-4b6e-bdaf-4ab0e35d5a79.png)
+
 
 
 
